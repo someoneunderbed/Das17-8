@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;500&family=Rubik:wght@500&display=swap");
+
+// **************** FONTS HERE **************
+
+$fontRubik: "Rubik", sans-serif;
+$fontPoppins: "Poppins", sans-serif;
+$fontRoboto: "Roboto", sans-serif;
+$headerCol: #ebf4fa;
+$bodyCol: #f5fafa;
+// **************** MIXINS HERE *************
+body {
+  background-color: $headerCol;
+}
+.section-one {
+  background-color: $headerCol;
+  header {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    .logo {
+      font-family: $fontRubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 31.635px;
+      line-height: 47px;
+      letter-spacing: 1px;
+      color: #40a3f8;
+      text-transform: uppercase;
+    }
+
+    ul {
+      display: flex;
+      align-items: baseline;
+
+      li,
+      .home-txt {
+        font-family: $fontPoppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #6e5f5f;
+        opacity: 0.6;
+        margin: 0 17.5px;
+      }
+      .home-txt {
+        font-weight: 500;
+        color: #40a3f8;
+        opacity: 1;
+      }
+      .home-btn {
+        width: 142px;
+        height: 47px;
+        background: #40a3f8;
+        border-radius: 5px;
+        border: none;
+        margin-left: 34px;
+
+        & {
+          font-family: $fontPoppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14.997px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+// **************** HEADER *************
+.block-one {
+  margin: 45px 300px;
+  display: grid;
+  grid-gap: 25px;
+  h1 {
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 70px;
+    color: #3e3e3e;
+
+    &::after {
+      content: "Suitable Doctor’s";
+      color: #40a3f8;
+    }
+  }
+  p {
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: rgba(117, 117, 117, 0.46);
+  }
+  .input-img {
+    input {
+      background: #ffffff;
+      box-shadow: 0px 4px 22px rgba(228, 245, 252, 0.3);
+      border-radius: 8px;
+      width: 566px;
+      height: 86px;
+      font-size: 21px;
+
+      &::placeholder {
+        text-indent: 25px;
+      }
+    }
+    img {
+      position: relative;
+      width: 36px;
+      right: 50px;
+      top: 15px;
+    }
+  }
+}
+
+// **************** BLOCK ONE *************
+
+.txt-block {
+  background-color: $bodyCol;
+  h1 {
+    text-align: center;
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 70px;
+    color: #3e3e3e;
+  }
+}
+.block-two {
+  background-color: $bodyCol;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  // ****** JavaScript Styles ******
+
+  .icon-div {
+    display: flex;
+    margin: 15px 25px;
+    flex-direction: column;
+    align-items: center;
+
+    .icon {
+      left: 200px;
+      width: 81px;
+    }
+    .txt-one {
+      font-family: $fontRoboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+
+      color: #3d3d3f;
+    }
+    .parag-one {
+      font-family: $fontRoboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+// **************** BLOCK TWO *************
+
+.block-three {
+  background-color: $bodyCol;
+
+  .txt-block-one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 35px;
+    grid-gap: 10px;
+
+    h1 {
+      font-family: $fontRoboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 42px;
+      line-height: 49px;
+      letter-spacing: 0.02em;
+      color: #3d3d3f;
+    }
+    .special-txt {
+      font-family: $fontRoboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: rgba(61, 61, 63, 0.7);
+    }
+    .parag-1 {
+      font-family: $fontRoboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: #3d3d3f;
+      &::before {
+        content: "";
+        background-image: url(./icons/tick.png);
+        background-size: 100% 100%;
+        display: inline-block;
+
+        /*size of your image*/
+        height: 25px;
+        width: 25px;
+
+        /*if you want to change the position you can use margins or:*/
+        position: relative;
+        top: 5px;
+        right: 7px;
+      }
+    }
+    button {
+      font-family: $fontRoboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      & {
+        background: #40a3f8;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        border: none;
+      }
+      &::after {
+        content: " ->";
+      }
+    }
+  }
+}
+// **************** GRID ONE *************
+.teext {
+  background-color: $bodyCol;
+  h1 {
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    color: #3d3d3f;
+    text-align: center;
+  }
+  p {
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(61, 61, 63, 0.7);
+  }
+}
+.grid-one {
+  background-color: $bodyCol;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .icon-div {
+    display: flex;
+    margin: 15px 100px;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+
+    .icon {
+      left: 200px;
+      width: 81px;
+    }
+    .txt-one {
+      font-family: $fontRoboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      color: #3d3d3f;
+    }
+    .parag-one {
+      font-family: $fontRoboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+//******************* Last One ******************
+.last-two {
+  background-color: $bodyCol;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-icon {
+  margin: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    margin-top: 10px;
+  }
+  img {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+.last-one {
+  background-color: $bodyCol;
+  h1 {
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    color: #3d3d3f;
+    text-align: center;
+  }
+  p {
+    font-family: $fontRoboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(61, 61, 63, 0.7);
+  }
+}
+.btn-load {
+  background-color: $bodyCol;
+  display: flex;
+  justify-content: center;
+
+  .load-more {
+    width: 142px;
+    height: 47px;
+    background: #40a3f8;
+    border-radius: 5px;
+    border: none;
+    margin: 12px 0;
+
+    & {
+      font-family: $fontPoppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14.997px;
+      line-height: 22px;
+      color: #ffffff;
+    }
+  }
+}
